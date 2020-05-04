@@ -38,11 +38,15 @@
             var kawaiiface = ['(✿◠‿◠)', '≧◡≦', '(▰˘◡˘▰)', 'UwU', '(●´ω｀●)', '(づ｡◕‿‿◕｡)づ, "owo"']
             function owoifytextpwease(){
                 var owotext = document.getElementById('owotextdaddy').value;
-                var owodone = owotext.replace(/(?:r|R)/g, "w");
-                owodone = owotext.replace(/(?:l|L)/g, "w");
-                document.getElementById('owotextdaddy').value = owodone;
-
-            }
+                owotext = owotext.replace(/(?:r|R)/g, "w");
+                owotext = owotext.replace(/(?:l|L)/g, "w");
+                owotext = owotext.replace(/n([aeiou])/g, 'ny$1');
+                owotext = owotext.replace(/N([aeiou])/g, 'Ny$1');
+                owotext = owotext.replace(/N([AEIOU])/g, 'Ny$1');
+                owotext = owotext.replace(/ove/g, "uv");
+                owotext = owotext.replace(/\!+/g, " " + kawaiiface[Math.floor(Math.random() * kawaiiface.length)] + " ");
+                document.getElementById('owotextdaddy').value = owotext;
+            };
         </script>
     </body>
 </html>
