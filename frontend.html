@@ -19,8 +19,12 @@
             .titletext{
                 text-align: center;
             }
-            .bottemtext{
-                
+            .form-control:focus {
+                border-color: #303030;
+                box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+            } 
+            footer{
+                padding-top: 400px;
             }
         </style>
         <title>hai uwu</title>
@@ -30,22 +34,27 @@
     <body>
         <div class='jumbotron' style='background-color: #303030;'>
             <h1 class='titletext' style="color: white;">
-                UwU Your Text Today!
+                UwU Twanswatow!
             </h1>
+            <p class='titletext'>
+                Pwease uwu wesponsibwy ≧◡≦ 
+            </p>
         </div>
         <div class='owotext' style='color: black;'>
             <label for="owotextdaddy" style="color: white;">OwO your text:</label>
             <textarea rows="8" id='owotextdaddy' class='md-textarea form-control' style='background-color: #272727; color: white;'>Notice that bulge daddy uwu! Made with love at 3 am by windows! </textarea>
         </div>
-        <button onclick='owoifytextpwease();' class='btn btn-primary btn-lg btn-block'>owo daddy!</button>
-       
+        <button onclick='owoifytextpwease();' class='btn btn-secondary btn-lg btn-block' style="background-color: #5d5d5d;">owo daddy!</button>
+       <footer>
+           <p>Made by Windows <3 UwU responsibly</p>
+       </footer>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script>
             //made at 3 am by windows uwu
             //ruleset
             //L = w, R = w
-            var kawaiiface = ['(✿◠‿◠)', '≧◡≦', '(▰˘◡˘▰)', 'UwU', '(●´ω｀●)', '(づ｡◕‿‿◕｡)づ, "owo"']
+            var kawaiiface = ['(✿◠‿◠)', '≧◡≦', '(▰˘◡˘▰)', 'UwU', '(●´ω｀●)', '(づ｡◕‿‿◕｡)づ', "owo"]
             function owoifytextpwease(){
                 var owotext = document.getElementById('owotextdaddy').value;
                 owotext = owotext.replace(/(?:r|R)/g, "w");
