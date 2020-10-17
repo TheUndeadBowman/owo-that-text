@@ -27,24 +27,24 @@
                 padding-top: 400px;
             }
         </style>
-        <title>hai uwu</title>
+        <title>Hello</title>
         <link rel="shortcut icon" href="titleimage.ico" />
     </head>
 
     <body>
         <div class='jumbotron' style='background-color: #303030;'>
             <h1 class='titletext' style="color: white;">
-                UwU Twanswatow!
+                UwU Translator!
             </h1>
             <p class='titletext'>
-                Pwease uwu wesponsibwy ≧◡≦ 
+                Please uwu responsibly  
             </p>
         </div>
         <div class='owotext' style='color: black;'>
             <label for="owotextdaddy" style="color: white;">OwO your text:</label>
             <textarea rows="8" id='owotextdaddy' class='md-textarea form-control' style='background-color: #272727; color: white;'>Notice that bulge daddy uwu! Made with love at 3 am by windows! </textarea>
         </div>
-        <button onclick='owoifytextpwease();' class='btn btn-secondary btn-lg btn-block' style="background-color: #5d5d5d;">owo daddy!</button>
+        <button onclick='owoifytextplease();' class='btn btn-secondary btn-lg btn-block' style="background-color: #5d5d5d;">owo daddy!</button>
        <footer>
            <p>Made by Windows <3 UwU responsibly</p>
        </footer>
@@ -55,13 +55,17 @@
             //ruleset
             //L = w, R = w
             var kawaiiface = ['(✿◠‿◠)', '≧◡≦', '(▰˘◡˘▰)', 'UwU', '(●´ω｀●)', '(づ｡◕‿‿◕｡)づ', "owo"]
-            function owoifytextpwease(){
+            function owoifytextplease(){
                 var owotext = document.getElementById('owotextdaddy').value;
-                owotext = owotext.replace(/(?:r|R)/g, "w");
-                owotext = owotext.replace(/(?:l|L)/g, "w");
-                owotext = owotext.replace(/n([aeiou])/g, 'ny$1');
-                owotext = owotext.replace(/N([aeiou])/g, 'Ny$1');
-                owotext = owotext.replace(/N([AEIOU])/g, 'Ny$1');
+                owotext = owotext.replace(/(?:r)/g, "w");
+                owotext = owotext.replace(/(?:R)/g, "W");
+                owotext = owotext.replace(/(?:l)/g, "w");
+                owotext = owotext.replace(/(?:L)/g, "W");
+                owotext = owotext.replace(/(?:v)/g, "w");
+                owotext = owotext.replace(/(?:V)/g, "W");
+                owotext = owotext.replace(/n([aeiouyw])/g, 'ny$1');
+                owotext = owotext.replace(/N([aeiouyw])/g, 'Ny$1');
+                owotext = owotext.replace(/N([AEIOUYW])/g, 'NY$1');
                 owotext = owotext.replace(/ove/g, "uv");
                 owotext = owotext.replace(/\!+/g, " " + kawaiiface[Math.floor(Math.random() * kawaiiface.length)] + " ");
                 document.getElementById('owotextdaddy').value = owotext;
